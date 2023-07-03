@@ -11,10 +11,9 @@
 function sumDigits(number) {
   return number
     .toString()
+    .replace(/-/g, "")
     .split("")
-    .filter((i) => i != "-")
     .reduce((a, b) => Number(a) + Number(b), 0);
 }
 
-
-console.log(sumDigits(954))
+console.log(sumDigits(954));
