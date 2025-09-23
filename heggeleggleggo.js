@@ -15,3 +15,4 @@ function heggeleggleggo(word) {
     .map((w) => w.replace(/([^aeiou])/gi, "$1egg"))
     .join(" ");
 }
+    
